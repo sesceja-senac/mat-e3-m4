@@ -50,16 +50,32 @@ video {
     margin: 50px 0 15px 0;
 }
 .divisoria-1 {
-    background-image: url('../design/pg1/paralaxe.png');
+    top: 0;
+    position: absolute;
+    background-image: url('../design/pg1/parallax.jpeg');
     height: 420px;
     width: 100%;
     background-attachment: fixed;
+    background-size: cover;
+}
+.fora-divisoria1{
+    top: 0;
+    position: absolute;
+    background-image: url('../design/pg1/parallax_moldura.png');
+    height: 420px;
+    width: 100%;
+}
+.box-divisoria1{
+    position: relative;
+    height: 420px;
+    width: 100%;
 }
 .divisoria-2 {
-    background-image: url('../design/pg1/paralaxe_2.png');
-    height: 420px;
+    background-image: url('../design/pg1/bg2_bottom.png');
+    height: 433px;
     width: 100%;
-    background-attachment: fixed;
+    background-size: cover;
+    margin-top: -380px;
 }
 .divisoria-3 {
     background-image: url('../design/pg1/paralaxe_3.png');
@@ -938,6 +954,38 @@ figure {
     transform: translateY(-8px);
     pointer-events:none;
 }
+/* MAT E3 M4 */
+
+.modal1-bt1{
+    background-image: url('../design/pg1/bt1.png');
+}
+.modal1-bt1:hover{
+    background-image: url('../design/pg1/bt1_hover.png');
+}
+.modal1-bt2{
+    background-image: url('../design/pg1/bt2.png');
+}
+.modal1-bt2:hover{
+    background-image: url('../design/pg1/bt2_hover.png');
+}
+.modal1-bt2, .modal1-bt1 {
+    width: 100%;
+    height: 391px;
+    background-size: contain;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+}
+.modal1-bt1:hover, .modal1-bt2:hover {
+    transform: scale(1.03);
+}
+.img-bolapena{
+    min-width: 580px;
+    margin-left: -200px !important;
+}
+/* MAT E3 M4 */
+
 @media (max-width:1800px){
     .rellax {max-width: 14%;}
     .rellax-3 {max-width: 17%;}
