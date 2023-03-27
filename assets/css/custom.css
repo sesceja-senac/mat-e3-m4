@@ -984,6 +984,18 @@ figure {
     min-width: 580px;
     margin-left: -200px !important;
 }
+.bg-video{
+    position: relative;
+    height: 676px;
+    background-image: url('../design/pg1/bg_video.png');
+    background-size: cover;
+}
+.bg-video video{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 200px auto 0px auto;
+}
 /* MAT E3 M4 */
 
 @media (max-width:1800px){
