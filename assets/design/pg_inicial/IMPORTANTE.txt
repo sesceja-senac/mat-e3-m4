@@ -1,0 +1,12 @@
+código da animação de entrada:
+https://codepen.io/Mestika/details/KVXVWE
+
+Se possível, mudar as cores da animação inicial para:
+#E79623
+#498189
+
+1) Assim que a animação de entrada ocorrer, a capa em questão surge (similar ao card do modelo).
+
+2) O botão do "probabilidade no projeto..." tem o efeito de aumentar quando em HOVER.
+
+3) Após apertar o botão "probabilidade no projeto...", a bola deve ser animada em direção ao gol. O jogador que chuta recebe um efeito de "shake" para indicar que chutou a bola.

@@ -11,31 +11,156 @@ video {
 }
 /* BGs */
 .bg-1 {
-    background-image: url('../design/pg1/bg_escuro.png');
+    background-image: url('../design/pg1/bg1.png');
     position: relative;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    padding-top: 80px;
     /* overflow-x: hidden; */
 }
-.bg-1 .container {
+.bg-3 {
+    background-image: url('../design/pg2/assets/Bg1.png');
+    position: relative;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    padding-top: 80px;
+    /* overflow-x: hidden; */
+}
+.bg-4 {
+    background-image: url('../design/pg2/assets/bg2.png');
+    position: relative;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    /* overflow-x: hidden; */
+}
+.bg-5 {
+    background-image: url('../design/03/assets/bg1.png');
+    position: relative;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    padding-top: 80px;
+    /* overflow-x: hidden; */
+}
+.bg-6 {
+    padding-top: 80px;
+    background-image: url('../design/03/assets/bg3.png');
+    position: relative;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.bg-7 {
+    background-image: url('../design/04/assets/bg1.png');
+    position: relative;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.bg-8 {
+    background-image: url('../design/05/assets/bg1.png');
+    position: relative;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    padding-top: 80px;
+}
+.bg-9 {
+    background-image: url('../design/05/assets/bg2.png');
+    position: relative;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.bg-9 .container{
     background-color: transparent;
-    color: white;
+    color: black;
+}
+.bg-10 {
+    background-image: url('../design/05/assets/bg3.png');
+    position: relative;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    padding-bottom: 80px;
+}
+.bg-10 .container-fluid{
+    color: #fff;
+}
+.bg-11 {
+    background-image: url('../design/06/assets/bg1_4.png');
+    position: relative;
+    background-size: 100% 100%;
+    padding-top: 80px;
+}
+.bg-11 .container{
+    padding-bottom: 80px;
+}
+.bg-12 {
+    background-image: url('../design/06/assets/bg2_3.png');
+    position: relative;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    padding-bottom: 80px;
+}
+.bg-12 .container{
+    color: #fff;
+    background-color: #007178;
+    padding-top: 60px;
+
+}
+.bg-12 .container p{
+    color: #fff;
+}
+.bg-13 {
+    background-image: url('../design/07/background.png');
+    position: relative;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+.bg-13 .container{
+    padding-bottom: 80px;}
+.bg-13 h3{
+    padding-top: 40px;
+}
+.bg-4 .container{
+    background-color: transparent;
+    color: #fff;
+}
+.bg-4 .container p{
+    color: #fff;
+}
+.bg-1 .container, .bg-3 .container {
+    background-color: #fff;
+    color: black;
     padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
     padding-bottom: 50px;
     position: relative;
 }
-.bg-1 .caixa {
+.bg-1 .caixa,.bg-2 .caixa, .bg-3 .caixa {
     color: white;
 }
-.bg-1 h3 {
+h3 {
     color: #d68423;
     font-size: 28px;
     margin: 50px 0 15px 0;
 }
-.bg-1 h4 {
-    margin-top: 60px;
-    margin-bottom: 40px;
+h4 {
+    color: #d68423;
+    padding-top: 30px;
+}
+.img-dtqlater{
+    display: block;
+    max-width: 65%;
+    margin: 400px auto 0 auto;
+    margin-right: 25%;
 }
 .bg-2 {
-    background-image: url('../design/pg1/bg_claro.png');
+    background-image: url('../design/pg1/bg_claro.png'), url('../design/pg1/bg2_topo.png');
+    background-position-y: 0px, -200px;
+    background-size: 100%;
+    background-repeat: no-repeat;
     position: relative;
 }
 .bg-2 .container {
@@ -53,7 +178,7 @@ video {
     top: 0;
     position: absolute;
     background-image: url('../design/pg1/parallax.jpeg');
-    height: 420px;
+    height: 315px;
     width: 100%;
     background-attachment: fixed;
     background-size: cover;
@@ -62,12 +187,13 @@ video {
     top: 0;
     position: absolute;
     background-image: url('../design/pg1/parallax_moldura.png');
-    height: 420px;
+    height: 315px;
     width: 100%;
+    background-size: 100% 100%;
 }
 .box-divisoria1{
     position: relative;
-    height: 420px;
+    height: 315px;
     width: 100%;
 }
 .divisoria-2 {
@@ -78,10 +204,40 @@ video {
     margin-top: -380px;
 }
 .divisoria-3 {
-    background-image: url('../design/pg1/paralaxe_3.png');
-    height: 420px;
+    top: 0;
+    position: absolute;
+    background-image: url('../design/pg2/assets/parallax.jpeg');
+    height: 315px;
     width: 100%;
     background-attachment: fixed;
+    background-size: cover;
+}
+.divisoria-4 {
+    top: 0;
+    position: absolute;
+    background-image: url('../design/03/assets/modelo_parallax.png');
+    height: 315px;
+    width: 100%;
+    background-size: 110% 105%;
+    background-position-x: 12%;
+}
+.divisoria-5 {
+    top: 0;
+    position: absolute;
+    background-image: url('../design/05/assets/parallax1.jpeg');
+    height: 315px;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.divisoria-6 {
+    top: 0;
+    position: absolute;
+    background-image: url('../design/05/assets/parallax2.jpeg');
+    height: 315px;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
 }
 .divisoria-pg3-1 {
     background-image: url(../design/pg3/divisoria_1.png);
@@ -167,7 +323,14 @@ video {
     top: 1500px;
     left: 25px;
 }
-
+.rellax-15 {
+    top: 550px;
+    left: 2%;
+}
+.rellax-16 {
+    top: 1502px;
+    left: 2%;
+}
 /* rellax yasmin */
 .marcador-div-pg3-6{
     position: absolute;
@@ -308,6 +471,16 @@ video {
     left: -75px;
     top: 0;
 }
+.icone.saiba-mais::before {
+    background-color: transparent;
+    background-image: url('../design/pg1/ico_saiba_mais.png');
+    background-size: contain;
+    height: 148px;
+    width: 148px;
+    left: -75px;
+    top: 0;
+}
+
 .icone.dica::before {
     background-color: transparent;
     background-image: url('../design/pg1/ico_dica.png');
@@ -335,6 +508,38 @@ video {
     left: -55px;
     top: 0px;
 }
+.icone.pergunta::before {
+    background-color: transparent;
+    background-image: url('../design/04/assets/ico_pergunta.png');
+    background-size: contain;
+    height: 148px;
+    width: 148px;
+    left: -55px;
+    top: 0px;
+}
+
+.caixa.icone{
+    background-color: #068080;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding-top: 60px;
+    box-shadow: 2px 2px 4px black;
+    padding-left: 80px;
+}
+.box-diferente{
+    color: #068080;
+    font-weight: 500;
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 2px 2px 4px black;
+
+}
+.caixa-vazia{
+    background-color: transparent !important;    box-shadow: none;margin: 0;
+}
 .cx-laranja.icone.vamos-praticar{
     padding: 57px;    padding-left: 80px;
 }
@@ -361,6 +566,37 @@ video {
     box-shadow: 3px 3px 4px #333;
     color: white;
 }
+/*  */
+
+.modal2-bt1 {
+    display: block;
+    width: 258px;
+    height: 409px;
+    background-image: url('../design/pg2/assets/bt1_1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    border: none;
+    background-color: transparent;
+}
+.modal2-bt1:hover, .modal2-bt2:hover {
+    opacity: 0.5;
+}
+.modal2-bt2 {
+    display: block;
+    margin: 0 auto;
+    width: 305px;
+    height: 489px;
+    background-image: url('../design/pg2/assets/bt2_1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 20px;
+    border: none;
+    background-color: transparent;
+}
+/*  */
 .letra {
     background-color: #2d5054;
     width: auto;
