@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RelacionarColunas</title>
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fa/css/all.min.css">
+    <link rel="stylesheet" href="assets/print/print.css">
+    <link rel="stylesheet" href="assets/css/associar-colunas.css">
+</head>
+
+<body>
+    <div class="game-associar-colunas no-print nao-imprimir">
+        <p><strong>Clique</strong> ou <strong>toque</strong> em um botão da coluna numerada e depois escolha um botão da coluna com o símbolo de <i class="fas fa-question"></i> com a opção que achar a mais correta. </p>
+        <div class="row">
+            <div class="col-12 col-sm-4 flexs">
+                <button data-resp="1" class="item item1">
+
+
+
+
+
+                    <p>Experimento aleatório </p>
+                </button>
+
+                <button data-resp="2" class="item item2">
+                    <p>Evento </p>
+                </button>
+
+                <button data-resp="3" class="item item3">
+                    <p>Espaço amostral </p>
+                </button>
+
+                <button data-resp="4" class="item item4">
+                    <p>Probabilidade  </p>
+                </button>
+
+                <button data-resp="5" class="item item5">
+                    <p>Princípio multiplicativo </p>
+                </button>
+
+                <!-- <button data-resp="6" class="item item6">
+                    <p>CÁLCIO</p>
+                </button>
+
+                <button data-resp="7" class="item item7">
+                    <p>CLORO</p>
+                </button>
+
+                <button data-resp="8" class="item item8">
+                    <p>CARBONO</p>
+                </button> -->
+
+            </div>
+            <div class="col-12 col-sm-8 flexs mt-3">
+                <button type="button" data-resp="1" class="resp resp1">
+                    <div class="txtacao"><i class="fas fa-question"></i></div>
+                    <p>Repetido em condições idênticas, apresenta possibilidades diferentes de resultados, mas sua ocorrência depende do acaso (não pode ser previsto com certeza). 
+                    </p>
+                </button>
+
+                <button type="button" data-resp="2" class="resp resp2">
+                    <div class="txtacao"><i class="fas fa-question"></i></div>
+                    <p>É um acontecimento, um fenômeno, um fato relacionado a um experimento aleatório. 
+                    </p>
+                </button>
+
+                <button type="button" data-resp="3" class="resp resp3">
+                    <div class="txtacao"><i class="fas fa-question"></i></div>
+                    <p>É o conjunto formado por todos os resultados possíveis de um experimento. 
+                    </p>
+                </button>
+
+                <button type="button" data-resp="4" class="resp resp4">
+                    <div class="txtacao"><i class="fas fa-question"></i></div>
+                    <p>É o estudo das chances de ocorrência de um resultado, que são obtidas pela razão entre casos favoráveis e casos possíveis. 
+                    </p>
+                </button>
+
+                <button type="button" data-resp="5" class="resp resp5">
+                    <div class="txtacao"><i class="fas fa-question"></i></div>
+                    <p> É uma ferramenta utilizada para se calcular o número de possibilidades para um evento. 
+                    </p>
+                </button>
+<!-- 
+                <button type="button" data-resp="4" class="resp resp4">
+                    <div class="txtacao"><i class="fas fa-question"></i></div>
+                    <p>SAL</p>
+                </button>
+
+                <button type="button" data-resp="2" class="resp resp2">
+                    <div class="txtacao"><i class="fas fa-question"></i></div>
+                    <p>FILAMENTO DE LÂMPADAS</p>
+                </button>
+
+                <button type="button" data-resp="3" class="resp resp3">
+                    <div class="txtacao"><i class="fas fa-question"></i></div>
+                    <p>BATERIAS</p>
+                </button> -->
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade associar_colunas_modal  no-print nao-imprimir" id="associar_colulas_errou" tabindex="-1"
+            aria-labelledby="associarColunasErrou" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered animate__animated animate__bounceIn">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="associarColunasErrou">Ops, tente novamente!</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade associar_colunas_modal  no-print nao-imprimir" id="associar_colulas_acertou"
+            tabindex="-1" aria-labelledby="associarColunasAcertou" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered  animate__animated animate__zoomIn animate__faster">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="associarColunasAcertou">Muito bem! Você acertou!</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Versão para impressão -->
+    <span class="print-only only-print">
+        <p>Associe a primeira coluna com a segunda.</p>
+        <table class="associe-colunas">
+            <tr>
+                <td>
+                    <p>A) GERMÂNIO</p>
+                    <p>B) TUNGSTÊNIO</p>
+                    <p>C) LÍTIO</p>
+                    <p>D) SÓDIO</p>
+                    <p>E) POTÁSSIO</p>
+                    <p>F) CÁLCIO</p>
+                    <p>G) CLORO</p>
+                    <p>H) CARBONO</p>
+                </td>
+                <td>
+                    <p>(&nbsp;&nbsp;) FRUTAS E VEGETAIS</p>
+                    <p>(&nbsp;&nbsp;) CONCHAS E OSSOS</p>
+                    <p>(&nbsp;&nbsp;) PISCINAS</p>
+                    <p>(&nbsp;&nbsp;) SEMICONDUTORES ELETRÔNICOS</p>
+                    <p>(&nbsp;&nbsp;) BASE DAS MOLÉCULAS DA VIDA</p>
+                    <p>(&nbsp;&nbsp;) SAL</p>
+                    <p>(&nbsp;&nbsp;) FILAMENTO DE LÂMPADAS</p>
+                    <p>(&nbsp;&nbsp;) BATERIAS</p>
+                </td>
+            </tr>
+        </table>
+    </span>
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/print/print.js"></script>
+    <script src="assets/js/associar-colunas.js"></script>
+</body>
+
+</html>

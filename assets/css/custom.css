@@ -9,6 +9,22 @@ video {
     display: block;
     margin: 60px auto;
 }
+/* bru custom */
+.esquemaDaBru.customimg .alt-c, .esquemaDaBru.customimg .alt-e{
+    width: auto; 
+    padding-right: 0px;
+    background-color: transparent;
+    border: none;
+}
+.customimg .f-negativo.text-danger, .customimg .f-positivo.text-success,
+    .feedbackClaro .f-negativo.text-danger, .feedbackClaro .f-positivo.text-success{
+    background-color: #fff !important;
+    padding: 10px;
+} 
+/* .resp p{
+    color: #007178 !important;
+    font-size: 20px ;
+ } */
 /* BGs */
 .bg-1 {
     background-image: url('../design/pg1/bg1.png');

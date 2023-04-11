@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="../assets/css/template.css">
     <link rel="stylesheet" href="../assets/css/aos.css">
     <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="js/dragula.css">
+    <link rel="stylesheet" href="css/game-custom.css">
+    <link rel="stylesheet" href="../assets/css/associar-colunas.css">
+    
 
     <link rel="stylesheet" href="../assets/print/print.css">
    
@@ -378,8 +382,8 @@
                         <img src="../assets/design/03/assets/ico_praticar.png" class="caixa-vazia no-print" alt="">
                         <br><br>
                         <p>Sobre espaço amostral, acompanhe a seguir algumas situações para compreender melhor os conceitos apresentados. </p>                            
-                        <div class="esquemaDaBru">
-                            <p class="enunciado" tabindex="0">O time de futebol da escola Pitagórica disputou um campeonato escolar. O professor Fernando, de educação física, convocou quatro alunos que jogam na posição de atacante, são eles: Ronaldo, Zico, Dodô e Hugo. Qual é o espaço amostral das duplas de ataque que podemos formar com esses alunos? </p>
+                        <div class="esquemaDaBru feedbackClaro">
+                            <p class="enunciado" tabindex="0">1. O time de futebol da escola Pitagórica disputou um campeonato escolar. O professor Fernando, de educação física, convocou quatro alunos que jogam na posição de atacante, são eles: Ronaldo, Zico, Dodô e Hugo. Qual é o espaço amostral das duplas de ataque que podemos formar com esses alunos? </p>
                             <button class="alt-e btn-sesc" title="alternativa: ">a) Espaço amostral = {(Hugo, Zico), (Hugo, Dodô), (Hugo, Ronaldo)} </button>
                             <button class="alt-e btn-sesc" title="alternativa: ">b) Espaço amostral = {(Ronaldo, Zico), (Ronaldo, Dodô), (Ronaldo, Hugo)}</button>
                             <button class="alt-e btn-sesc" title="alternativa: ">c) Espaço amostral = {(Zico, Ronaldo), (Zico, Dodô), (Zico, Hugo)}  </button>
@@ -391,10 +395,196 @@
                                 <p class="f-positivo text-success mt-2 mb-2 animate__animated animate__shakeY" style="display: none;"><i class="fas fa-check"></i> Parabéns! Resposta correta. Você formou todas as duplas possíveis.</p>
                             </div>
                         </div>
-                        <h1>2.INÍCIO CLIQUE E ARRASTA </h1>
-                        <h1>3.INÍCIO MÚLTIPLA ESCOLHA </h1>
+                        <!-- dragdrop -->
+                        <br><br>
+                        <div id="content-game">
+                                    
+                            <div class="container-fluid game-body no-print" style="padding:0;">
+                                <div class="row">
+                                    <div class="col-10 align-self-start d-block m-auto">
+                                        <!-- <div class="row game-descricao-img"><img src="img/pg2-praticar2-ico.png" style="width: 150px;" alt=""></div> -->
+                                        <div class="row game-descricao">
+                                            <p>2. O casal Anderson e Jacobina pretende ter três filhos. A seguir, temos o espaço amostral que representa as possibilidades de filhos em relação ao sexo masculino (M) ou feminino (F).    </p>
+                                            <img src="../assets/design/pg2/assets/ativ_amostral.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div id="slots" class="col-12 mt-5 mb-5">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6">
+                                                <div class="game-titulo">
+                                                    <p><strong>Evento 1</strong>   <br>
+                    
+                                                        Arraste a opção que corresponde ao evento A, em que podemos determinar a ocorrência de três filhos do sexo masculino.  </p>
+                                                </div>
+                                                <div id="slot-1" class="slot">
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6">
+                                                <div class="game-titulo">
+                                                    <p><strong> Evento 2</strong> <br>
+                    
+                                                        Arraste as opções para o evento B, em que podemos determinar a ocorrência de dois filhos do sexo feminino e um do masculino. </p>
+                                                </div>
+                                            <div id="slot-2" class="slot">
+                                            
+                                            </div>
+                                        </div>
+                                        <!-- <div class="col-12 col-md-4 mt-3 mb-3">
+                                            <div class="game-titulo">
+                                                <p>Pós-produção</p>
+                                            </div>
+                                            <div id="slot-3" class="slot">
+                                            
+                                            </div>
+                                        </div> -->
+                                        </div>
+                                        
+                                    </div>
+                        
+                                    <div id="cardPile" class="game-itens-container">
+                                        <div id="card-1" class="card" data-target="slot-1">
+                                            <img src="../assets/design/pg2/assets/ativ1_1.png" alt="">
+                                        </div>
+                                        
+                                        <div id="card-3" class="card"  data-target="slot-3">
+                                            <img src="../assets/design/pg2/assets/ativ1_2.png" alt="">
+                                        </div>
+                                        
+                                        <div id="card-5" class="card" data-target="slot-3">
+                                            <img src="../assets/design/pg2/assets/ativ1_3.png" alt="">
+                                        </div>
+                                        
+                                        <div id="card-8" class="card" data-target="slot-2">
+                                            <img src="../assets/design/pg2/assets/ativ1_4.png" alt="">
+                                        </div>
+                                        <div id="card-10" class="card" data-target="slot-3">
+                                            <img src="../assets/design/pg2/assets/ativ1_5.png" alt="">
+                                        </div>
+                                        <div id="card-11" class="card" data-target="slot-2">
+                                            <img src="../assets/design/pg2/assets/ativ1_6.png" alt="">
+                                        </div>
+                                        <div id="card-2" class="card" data-target="slot-2">
+                                            <img src="../assets/design/pg2/assets/ativ1_7.png" alt="">
+                                        </div>
+                                        <div id="card-4" class="card" data-target="slot-3">
+                                            <img src="../assets/design/pg2/assets/ativ1_8.png" alt="">
+                                        </div>
+                                        <!-- <div id="card-6" class="card" data-target="slot-2">
+                                            <img src="../assets/design/pg2/assets/ativ1_9.png" alt="">
+                                        </div>
+                                        <div id="card-7" class="card" data-target="slot-2">
+                                            <img src="../assets/design/pg2/assets/ativ1_1.png" alt="">
+                                        </div>
+                                        <div id="card-9" class="card" data-target="slot-3">
+                                            <img src="../assets/design/pg2/assets/ativ1_1.png" alt="">
+                                        </div> -->
+                                    
+                                    </div>
+                                
+                                    
+                                   
+                            
+                                
+                                </div>
+                            </div>
+                        </div>                           
+                        
+                        <div class="modal fade" id="bgmodal-acerto" tabindex="-1" aria-labelledby="bgmodal-passou" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="bgmodal-passou"><i class="fas fa-check    "></i> Parabéns, resposta correta! </h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-12 col-lg-4">
+                                                <img src="img/acerto.png" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="col-12 col-lg-8">
+                                        <p>Muito bem! Este item faz parte desta etapa de produção.
+                                        </p>
+                                        </div></div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    
+                        <div class="modal fade" id="bgmodal-erro" tabindex="-1" aria-labelledby="bgmodal-passou" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-danger">
+                                        <h5 class="modal-title" id="bgmodal-passou"><i class="fas fa-times    "></i> Atenção! </h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-12 col-lg-4">
+                                                <img src="img/erro.png" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="col-12 col-lg-8">
+                                        <p>Este item não faz parte desta etapa de produção. Tente novamente.
+                                        </p>
+                                        </div></div>
+                    
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- dragdrop -->
+                        <!--<h1>3.INÍCIO MÚLTIPLA ESCOLHA </h1>  -->
+                        <br><br>
+                        <div class="esquemaDaBru customimg">
+                            <p class="enunciado" tabindex="0">3. As equipes do projeto Brilhando no Futebol foram convidadas para participar de um campeonato fora da cidade, porém não possuem verba suficiente para organizar a viagem para todos os jogadores. Os responsáveis tiveram a ideia de realizar a rifa de um computador. Assim, fizeram mil bilhetes, numerados de 1 a 1000, dos quais apenas um será premiado por sorteio. Lorenzo comprou os bilhetes de números 324, 325, 326, 327, 328, 329 e 330. Com base nessas informações, clique na opção correta. </p>
+                            <p>Qual é o número de elementos do espaço amostral desse experimento? </p>
+                            <button class="alt-c btn-sesc" title="alternativa: "><img src="../assets/design/pg2/assets/ativ2_4.png" alt=""> </button>
+                            <button class="alt-e btn-sesc" title="alternativa: "><img src="../assets/design/pg2/assets/ativ2_3.png" alt=""> </button>
+                            <button class="alt-e btn-sesc" title="alternativa: "><img src="../assets/design/pg2/assets/ativ2_5.png" alt=""> </button>
+                            <button class="alt-e btn-sesc" title="alternativa: "><img src="../assets/design/pg2/assets/ativ2_2.png" alt=""> </button>
+                            <button class="alt-e btn-sesc" title="alternativa: "><img src="../assets/design/pg2/assets/ativ2_1.png" alt=""> </button>
+                            <div class="feedbacks">
+                                <p class="f-positivo text-success mt-2 mb-2 animate__animated animate__shakeY" style="display: none;"><i class="fas fa-check"></i> Parabéns! Resposta correta.</p>
+                                <p class="f-negativo text-danger  mt-2 mb-2 animate__animated animate__shakeX" style="display: none;"><i class="fas fa-times"></i> Resposta incorreta. </p>
+                                <p class="f-negativo text-danger  mt-2 mb-2 animate__animated animate__shakeX" style="display: none;"><i class="fas fa-times"></i> Resposta incorreta. </p>
+                                <p class="f-negativo text-danger  mt-2 mb-2 animate__animated animate__shakeX" style="display: none;"><i class="fas fa-times"></i> Resposta incorreta. </p>
+                                <p class="f-negativo text-danger  mt-2 mb-2 animate__animated animate__shakeX" style="display: none;"><i class="fas fa-times"></i> Resposta incorreta. </p>
+                            </div>
+                        </div>
+                        <div class="esquemaDaBru customimg">
+                            <!-- <p class="enunciado" tabindex="0">3. As equipes do projeto Brilhando no Futebol foram convidadas para participar de um campeonato fora da cidade, porém não possuem verba suficiente para organizar a viagem para todos os jogadores. Os responsáveis tiveram a ideia de realizar a rifa de um computador. Assim, fizeram mil bilhetes, numerados de 1 a 1000, dos quais apenas um será premiado por sorteio. Lorenzo comprou os bilhetes de números 324, 325, 326, 327, 328, 329 e 330. Com base nessas informações, clique na opção correta. </p> -->
+                            <p>Qual é o número de elementos do espaço amostral desse experimento? </p>
+                            <button class="alt-e btn-sesc" title="alternativa: "><img src="../assets/design/pg2/assets/ativ2_1.png" alt=""> </button>
+                            <button class="alt-c btn-sesc" title="alternativa: "><img src="../assets/design/pg2/assets/ativ2_2.png" alt=""> </button>
+                            <button class="alt-e btn-sesc" title="alternativa: "><img src="../assets/design/pg2/assets/ativ2_5.png" alt=""> </button>
+                            <button class="alt-e btn-sesc" title="alternativa: "><img src="../assets/design/pg2/assets/ativ2_3.png" alt=""> </button>
+                            <button class="alt-e btn-sesc" title="alternativa: "><img src="../assets/design/pg2/assets/ativ2_4.png" alt=""> </button>
+                            <div class="feedbacks">
+                                <p class="f-negativo text-danger  mt-2 mb-2 animate__animated animate__shakeX" style="display: none;"><i class="fas fa-times"></i> Resposta incorreta. </p>
+                                <p class="f-positivo text-success mt-2 mb-2 animate__animated animate__shakeY" style="display: none;"><i class="fas fa-check"></i> Parabéns! Resposta correta.</p>
+                                <p class="f-negativo text-danger  mt-2 mb-2 animate__animated animate__shakeX" style="display: none;"><i class="fas fa-times"></i> Resposta incorreta. </p>
+                                <p class="f-negativo text-danger  mt-2 mb-2 animate__animated animate__shakeX" style="display: none;"><i class="fas fa-times"></i> Resposta incorreta. </p>
+                                <p class="f-negativo text-danger  mt-2 mb-2 animate__animated animate__shakeX" style="display: none;"><i class="fas fa-times"></i> Resposta incorreta. </p>
+                            </div>
+                        </div>
+                        <!--  -->
+<br><br><br>
+<br><br><br>
 
-                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+                        
+
                     </div>
                 </div>
             </div>
@@ -474,12 +664,9 @@
                             Considerando o conteúdo que você viu até aqui, responda às questões a seguir. 
                         </p>  
                                 
-                        <div class="acessivel print">
-                          <img src="../assets/design/03/assets/img_atividade.png" class="img-responsive center-block  img-fluid d-block mx-auto my-3" data-aos="zoom-in">
-                        </div>
-                        <div class="esquemaDaBru">
+                        <div class="esquemaDaBru feedbackClaro">
                             <p>Considere a árvore de possibilidades: </p>
-                            <p class="enunciado" tabindex="0">Para ir a uma festa, Ana dispõe de duas camisas e duas calças. Analisando a árvore de possibilidades, de quantas maneiras diferentes Ana pode se vestir?  </p>
+                            <p class="enunciado" tabindex="0">1. Na escola de Calculópolis, os professores do Ensino Médio desejam organizar uma comissão para ir à prefeitura e conversar com o prefeito sobre o ginásio escolar, que foi destruído em dezembro pelo temporal que atingiu a cidade. A escola tem 1 professor na área de matemática, 5 na área de linguagens, 4 na área de ciências humanas e 3 na área de ciências da natureza. Há quantas possibilidades diferentes de se formar uma comissão que contenha um professor de cada área?  </p>
                             <button class="alt-e btn-sesc" title="alternativa: ">13 possibilidades </button>
                             <button class="alt-e btn-sesc" title="alternativa: ">12 possibilidades </button>
                             <button class="alt-c btn-sesc" title="alternativa: ">60 possibilidades </button>
@@ -491,9 +678,16 @@
                                 <p class="f-negativo text-danger  mt-2 mb-2 animate__animated animate__shakeX" style="display: none;"><i class="fas fa-times"></i> Resposta incorreta! Verifique as opções dadas e realize a multiplicação corretamente.  </p>
                             </div>
                         </div>
-                        <div class="esquemaDaBru">
+                        <div class="esquemaDaBru feedbackClaro">
                             <p>Considere a árvore de possibilidades: </p>
-                            <p class="enunciado" tabindex="0">Para ir a uma festa, Ana dispõe de duas camisas e duas calças. Analisando a árvore de possibilidades, de quantas maneiras diferentes Ana pode se vestir?  </p>
+                            <div class="acessivel print">
+                              <img src="../assets/design/03/assets/img_atividade.png" class="img-responsive center-block  img-fluid d-block mx-auto my-3" data-aos="zoom-in" alt="Árvore de possibilidades calça um com camisa um, calça um com camisa dois, calça dois com camisa um e calça dois com camisa dois. ">
+                                <figcaption>
+                                    Figura 2 – Árvore de possibilidades <br>  
+                                    Fonte: Sesc EJA EAD (2023) 
+                                </figcaption>
+                            </div>
+                            <p class="enunciado" tabindex="0">2. Para ir a uma festa, Ana dispõe de duas camisas e duas calças. Analisando a árvore de possibilidades, de quantas maneiras diferentes Ana pode se vestir?  </p>
                             <button class="alt-e btn-sesc" title="alternativa: ">1 maneira </button>
                             <button class="alt-e btn-sesc" title="alternativa: ">2 maneiras </button>
                             <button class="alt-e btn-sesc" title="alternativa: ">4 maneiras </button>
@@ -506,8 +700,6 @@
                             </div>
                         </div>
                         <br><br>
-                        <br><br>
-
 
 
                     </div>
@@ -839,7 +1031,7 @@
 
                         <h5>Exercícios de cálculo da probabilidade </h5>
                         
-                        <div class="esquemaDaBru">
+                        <div class="esquemaDaBru feedbackClaro">
                             <p class="enunciado" tabindex="0">1. A fábrica em que o pai Silva trabalha recebeu uma devolução de 120 lâmpadas em uma caixa, na qual 36 lâmpadas estavam queimadas e 84 lâmpadas estavam perfeitas. O conferente da devolução foi conferir se as quantidades informadas de lâmpadas queimadas e perfeitas estavam corretas, porém, ao abrir a caixa, percebeu que elas estavam misturadas. Dessa forma, retirando uma lâmpada ao acaso dessa caixa, qual é a probabilidade de o conferente obter </p>
                             <p>a) uma lâmpada perfeita? </p>
                             <button class="alt-e btn-sesc" title="alternativa: ">25%	 </button>
@@ -865,7 +1057,7 @@
                                                                       
                             </div>
                         </div>
-                        <div class="esquemaDaBru">
+                        <div class="esquemaDaBru feedbackClaro">
                             <p class="enunciado" tabindex="0">b) uma lâmpada queimada? </p>
 
                             <button class="alt-c btn-sesc" title="alternativa: ">a)	52% </button>
@@ -884,9 +1076,92 @@
                                                 class="fas fa-times"></i> Resposta incorreta! Verifique o número correto de estudantes que tomaram as duas doses e o total de estudantes da escola. </p>
                             </div>
                         </div>
+                        <br>
                         <p>
                             3. Observe os conceitos a seguir (coluna da esquerda) e associe-os corretamente às suas definições (coluna da direita): 
                         </p>
+                        <div class="game-associar-colunas no-print nao-imprimir">
+                            <p><strong>Clique</strong> ou <strong>toque</strong> em um botão da coluna numerada e depois escolha um botão da coluna com o símbolo de <i class="fas fa-question"></i> com a opção que achar a mais correta. </p>
+                            <div class="row">
+                                <div class="col-12 col-sm-4 flexs">
+                                    <button data-resp="1" class="item item1">
+                                        <p>Experimento aleatório </p>
+                                    </button>
+                                    <button data-resp="2" class="item item2">
+                                        <p>Evento </p>
+                                    </button>
+                                    <button data-resp="3" class="item item3">
+                                        <p>Espaço amostral </p>
+                                    </button>
+                                    <button data-resp="4" class="item item4">
+                                        <p>Probabilidade  </p>
+                                    </button>
+                                    <button data-resp="5" class="item item5">
+                                        <p>Princípio multiplicativo </p>
+                                    </button>
+                    
+                                </div>
+                                <div class="col-12 col-sm-8 flexs mt-3">
+                                    <button type="button" data-resp="1" class="resp resp1">
+                                        <div class="txtacao"><i class="fas fa-question"></i></div>
+                                        <p>Repetido em condições idênticas, apresenta possibilidades diferentes de resultados, mas sua ocorrência depende do acaso (não pode ser previsto com certeza). 
+                                        </p>
+                                    </button>
+                    
+                                    <button type="button" data-resp="2" class="resp resp2">
+                                        <div class="txtacao"><i class="fas fa-question"></i></div>
+                                        <p>É um acontecimento, um fenômeno, um fato relacionado a um experimento aleatório. 
+                                        </p>
+                                    </button>
+                    
+                                    <button type="button" data-resp="3" class="resp resp3">
+                                        <div class="txtacao"><i class="fas fa-question"></i></div>
+                                        <p>É o conjunto formado por todos os resultados possíveis de um experimento. 
+                                        </p>
+                                    </button>
+                    
+                                    <button type="button" data-resp="4" class="resp resp4">
+                                        <div class="txtacao"><i class="fas fa-question"></i></div>
+                                        <p>É o estudo das chances de ocorrência de um resultado, que são obtidas pela razão entre casos favoráveis e casos possíveis. 
+                                        </p>
+                                    </button>
+                    
+                                    <button type="button" data-resp="5" class="resp resp5">
+                                        <div class="txtacao"><i class="fas fa-question"></i></div>
+                                        <p> É uma ferramenta utilizada para se calcular o número de possibilidades para um evento. 
+                                        </p>
+                                    </button>
+                                </div>
+                            </div>
+                    
+                            <!-- Modal -->
+                            <div class="modal fade associar_colunas_modal  no-print nao-imprimir" id="associar_colulas_errou" tabindex="-1"
+                                aria-labelledby="associarColunasErrou" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered animate__animated animate__bounceIn">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="associarColunasErrou">Ops, tente novamente!</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                    
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade associar_colunas_modal  no-print nao-imprimir" id="associar_colulas_acertou"
+                                tabindex="-1" aria-labelledby="associarColunasAcertou" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered  animate__animated animate__zoomIn animate__faster">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="associarColunasAcertou">Muito bem! Você acertou!</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                        </div>
+                    <br><br>
 
                     </div>
                 </div>
@@ -967,6 +1242,11 @@
     <script src="../assets/js/script.js"></script>
     <script src="../assets/js/aos.js"></script>
     <script src="../assets/js/rellax.min.js"></script>
+    <script src='js/dragula.js'></script>
+    <script src="js/game-custom.js"></script>
+    <script src="../assets/js/associar-colunas.js"></script>
+
+
     <script>AOS.init(); var rellax = new Rellax('.rellax');</script>
  <!-- Versao atual do handtalk -->
     <script>
