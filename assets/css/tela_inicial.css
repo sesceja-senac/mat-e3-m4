@@ -32,7 +32,7 @@
 .btbola{bottom: 5%; left: 40%;}
 .btgoleiro{right: 10%; bottom:20%}
 .modal-intro {
-    background-image: url('../design/pg_inicial/modal-bg.png');
+    background-image: url('../design/pg_inicial/Video-apresentacao-gd.png');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -114,7 +114,7 @@
 .video-pq {
     height: 150px;
     width: 150px;
-    background-image: url('../../img/pginicial/Video-apresentacao-pq.png'); 
+    background-image: url('../design/pg_inicial/Video-apresentacao-pq.png'); 
     background-size: contain;
     background-position: center;
     display: flex;

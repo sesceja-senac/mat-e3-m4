@@ -1,7 +1,7 @@
 checkBotoes();
 
 // caixas expansiveis
-$('.caixa-container button').click(function(){
+$('.caixa-container button.btpluscaixa').click(function(){
     let caixa = $(this).prev()
     if(caixa.hasClass('aberta')){
         caixa.removeClass('aberta')
