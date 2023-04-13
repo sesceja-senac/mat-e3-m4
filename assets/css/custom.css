@@ -2,7 +2,7 @@
     font-family: 'marker';
     src: url('../design/menu/PermanentMarker-Regular.ttf');
 }
-video {
+video, iframe {
     background-color: #333;
     width: 800px;
     max-width: 100%;
@@ -1356,7 +1356,7 @@ figure {
     background-size: 100%;
     margin: 0px 0px 30px 0px;
 }
-.bg-video video{
+.bg-video video, .bg-video iframe{
     position: absolute;
     left: 0;
     right: 0;
