@@ -12,3 +12,17 @@ $('.botao-video').click(function(){
   $('.backdrop').fadeIn()
   $('html').css('overflow', 'hidden')
 })
+const animated = document.querySelector(".profile-card");
+var count;
+
+animated.addEventListener("animationend", () => {
+  count++
+  console.log("Animation ended");
+  
+  if(count=9) {
+    setTimeout(function(){
+      $(".profile-card header").addClass('on');
+    }, 3200);
+  }
+  
+});

@@ -3,7 +3,7 @@
     height: 100vh;
     position: relative;
     overflow: hidden;
-    background-image: url('../design/pg_inicial/bg.png');
+    /* background-image: url('../design/pg_inicial/bg.png'); */
     background-size: cover;
 }
 .backdrop {
@@ -27,6 +27,7 @@
 }
 .btjogador,.btbola,.btgoleiro,.btacesso{
     position: absolute;
+    z-index: 1;
 }
 .btjogador{bottom: 5%; left: 15%;}
 .btbola{bottom: 5%; left: 40%;}

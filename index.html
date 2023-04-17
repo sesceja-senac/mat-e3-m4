@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <!-- Bootstrap CSS v5.0.2 -->      
-    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css"> -->
     <link rel="stylesheet" href="assets/css/animate.min.css" />
     <link rel="stylesheet" href="assets/fa/css/all.min.css">
     <link rel="stylesheet" href="assets/css/tela_inicial.css" />
-    <!-- <link rel="stylesheet" href="assets/css/anim.css" /> -->
     <link rel="stylesheet" href="assets/css/preloader.css">
+    <link rel="stylesheet" href="assets/css/anim.css" />
     <title>Tela inicial</title>
 </head>
 <body>
@@ -20,25 +20,36 @@
     </div>
     <div id="wrapper">
         <a href="conteudo/index.html" target="_blank" rel="noopener noreferrer">
-            <img src="assets/design/pg_inicial/bt.png" class="animate__animated animate__heartBeat btacesso" alt=""></a>
-        <img src="assets/design/pg_inicial/jogador.png" class="animate__animated animate__heartBeat btjogador" alt="">
-        <img src="assets/design/pg_inicial/bola.png" class="animate__animated animate__heartBeat btbola" alt="">
-        <img src="assets/design/pg_inicial/goleiro.png" class="animate__animated animate__heartBeat btgoleiro" alt="">
+            <!-- <img src="assets/design/pg_inicial/bt.png" class="animate__animated animate__heartBeat btacesso" alt=""></a> -->
+        <img src="assets/design/pg_inicial/jogador.png" class="animate__animated animate__backInLeft btjogador animate__delay-2s" alt="">
+        <!-- <img src="assets/design/pg_inicial/bola.png" class="animate__animated animate__heartBeat btbola" alt=""> -->
+        <img src="assets/design/pg_inicial/goleiro.png" class="animate__animated animate__heartBeat btgoleiro  animate__delay-3s" alt="">
+    </div>
+
+        <aside class="profile-card">
+            <header>
+            
+                <img src="assets/design/pg_inicial/bt.png" alt="">
+            </header>
         
+            <!-- bit of a bio; who are you? -->
+            <div class="profile-bio">
 
-<!-- <aside class="profile-card">
-    <ul class="profile-social-links">
-    
-    </ul>
-
-</aside> -->
+            </div>
+        
+            <!-- some social links to show off -->
+            <ul class="profile-social-links">
+              
+            </ul>
+        
+        </aside>
 <!-- that’s all folks! -->
-        <!-- <img src="assets/design/pg_inicial/titulo.png" class="titulo non-visible">
+        <img src="assets/design/pg_inicial/titulo.png" class="titulo non-visible">
         <img src="assets/design/pg_inicial/ilustra.png" class="ilustra">
-        <a href="conteudo/index.html" class="start-bt non-visible"></a> -->
+        <a href="conteudo/index.html" class="start-bt non-visible"></a>
 
 
-        <div class="backdrop">
+        <!-- <div class="backdrop">
             <div class="modal-intro">
                 <p>Olá! Antes de começar, assista ao vídeo introdutório sobre o módulo a seguir:</p>
                 <iframe class="ytb" src="https://www.youtube.com/embed/Wf_0GaqfMqs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -56,7 +67,7 @@
             </div>
         </div>
     </div> 
-   
+    -->
 
     <!--Jquery-->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
