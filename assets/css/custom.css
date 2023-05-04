@@ -114,6 +114,10 @@ video, iframe {
     background-size: 100% 100%;
     padding-top: 80px;
 }
+.pagina .container {
+    padding-bottom: 60px;
+    padding-top: 40px;
+}
 .bg-11 .container{
     padding-bottom: 80px;
 }
@@ -481,11 +485,11 @@ h4 {
     border-radius: 10px !important;
     background-color: #488080 !important;
 }
-.accordion-button {
+.caixa-exp .accordion-button {
     padding: 12px 0px;
-    height: 50px !important;
+    height: 50px;
     border-radius: 10px !important;
-    text-transform: inherit !important;
+    text-transform: inherit;
 }
 .painel-gaitinha .accordion-button:before {
     content: "";
@@ -1346,7 +1350,8 @@ figure {
 }
 .img-bolapena{
     min-width: 580px;
-    margin-left: -200px !important;
+    margin-left: -200px;
+    display: block;
 }
 .bg-video{
     position: relative;
@@ -1362,6 +1367,23 @@ figure {
     margin: 100px auto 0px auto;
     height: 380px;
 }
+
+.btn-obj {
+    display: block;
+    margin: 30px auto;
+    text-decoration: none;
+    width: fit-content;
+    padding: 20px;
+    background-color: #068080;
+    box-shadow: -4px -4px #d68423;
+    color: white;
+    cursor: pointer;
+}
+.btn-obj:hover {
+    transform: scale(1.05);
+    color: white;
+}
+.img-final {float: right; max-width: 300px; margin-top: -60px;}
 /* MAT E3 M4 */
 
 @media (max-width:1800px){
@@ -1383,6 +1405,19 @@ figure {
     .rellax{max-width: 15%;}
 }
 @media (max-width: 1000px){
+    .img-bolapena{
+        min-width: 580px;
+        margin-left: -300px;
+    }
+    .bg-9 {
+        background-position: right;
+        background-size: cover;
+    }
+    .bg-9 .container-fluid {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
     /* galeria */
     .modal-galeria {
         position: static;
@@ -1457,9 +1492,48 @@ figure {
 }
 
 @media (max-width:600px) {
+    .divisoria-1, .divisoria-3, .divisoria-4, .divisoria-5, .divisoria-6 {
+        background-attachment: unset;
+    }
+    .divisoria-2 {display: none;}
+    .bt-print {
+        width: 120px;
+        position: absolute;
+        left: 20px;
+        top: 35px;
+    }
+    .bg-1 {
+        background-image: unset;
+        padding: 0;
+    }
+    .bg-2.p-t {
+        padding-top: 0;
+        padding-bottom: 60px;
+    }
+    .bg-2 .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .img-bolapena {display: none;}
+    .bg-2, .bg-5, .bg-7, .bg-8 {
+        padding-top: 0;
+        background-image: unset;
+    }
+    .modal2-bt1 {
+        margin-bottom: 50px;
+        height: 350px;
+    }
+    .modal2-bt2 {
+        height: 350px;
+    }
+    .container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
     .menu-btn {
         left: unset;
         right: 20px;
+        top: 80px;
     }
     .obj-cddpg3-2 {
         flex-wrap: wrap;
@@ -1555,5 +1629,11 @@ figure {
     }
     .coluna-img {
         display: none;
+    }
+    .caixa-exp .accordion-button {
+        height: auto;
+    }
+    .img-final{
+        float: unset; max-width: 200px; margin: 30px auto; display: block;
     }
 }

@@ -571,6 +571,7 @@ button, a {
     background-color: darkgray;
     box-shadow: 0 2px 0 2px rgba(0,0,0,.1);
 }
+.pagina div.game-itens-container {display: flex; flex-wrap: wrap;}
 
 /*----------------*/
 
@@ -584,7 +585,7 @@ button, a {
   position: relative !important;
   opacity: 1;
 }
-
+.modal.fade.no-print {display: none !important;}
 .modal.fade .modal-dialog {
   width: 100% !important;
 }
@@ -816,7 +817,8 @@ iframe, iframe.youtube-pl{
    text-align: left;
    background-color: white;
    margin-bottom: 1rem;
-   width: 100%;
+   width: auto;
+   display: inline-block;
 }
 .esquemaDaBru .feedbacks{
    display: none;
@@ -824,7 +826,11 @@ iframe, iframe.youtube-pl{
 .clique{
    display: none;
 }
-
+.caracoroa {
+  width: 200px;
+  float: left;
+  margin-right: 20px;
+}
 
 /*modais no leitor*/
 .modal{
@@ -847,5 +853,12 @@ iframe, iframe.youtube-pl{
   display: none;
 }
 
-
+.floaty {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 100px;
+}
+.floatx {
+  
+}
 
