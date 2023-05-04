@@ -858,7 +858,9 @@ iframe, iframe.youtube-pl{
   margin-right: 20px;
   margin-bottom: 100px;
 }
-.floatx {
-  
+.simbolo-print {
+  max-height: 30px;
+  margin-right: 3px;
+  display: inline;
+  margin-bottom: -3px;
 }
-
