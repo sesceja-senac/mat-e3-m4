@@ -54,8 +54,7 @@
     width: 480px;
     padding-top: 10px;
 }
-.botao-fechar,
-.botao-fechar-2 {
+.botao-fechar {
     display: block;
     width: 100px;
     padding: 10px;
@@ -63,11 +62,9 @@
     border: 1px solid white;
     color: white;
     box-shadow: 2px 1px 3px #333;
+    cursor: pointer;
 }
-.botao-fechar:hover,
-.botao-fechar-2:hover {
-    transform: translateY(-3px);
-}
+
 .ytb {
     height: 300px;
     width: 480px;
@@ -87,34 +84,39 @@
 }
 .start-bt {
     background-image: url('../design/pg_inicial/btn_hover_scale.png');
-    width: 193px;
-    height: 139px;
+    width: 181px;
+    height: 181px;
     position: absolute;
     z-index: 15;
-    right: 12%;
-    top: 49%;
+    right: 8%;
+    bottom: 5%;
     display: block;
 }
-.start-bt:hover {
+.start-bt:hover, .botao-video:hover {
     transform: scale(1.05) !important;
 }
-.non-visible {display: none;}
+.profile-card header img:hover {
+    transform: scale(1) !important;
+}
 .botao-video {
     position: absolute;
-    top: 175px;
-    left: 15px;
+    bottom: 1%;
+    right: 22%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 2;
 }
+.non-visible {display: none;}
+
 .botao-video p {
     font-size: 18px;
     text-align: center;
     font-weight: 600;
 }
 .video-pq {
-    height: 150px;
-    width: 150px;
+    height: 130px;
+    width: 130px;
     background-image: url('../design/pg_inicial/Video-apresentacao-pq.png'); 
     background-size: contain;
     background-position: center;
@@ -123,14 +125,48 @@
     padding-top: 23px;
 }
 .img-play {
-    height:85px;
-    width: 85px;
+    height:80px;
+    width: 80px;
 }
 .video-pq:hover {
     transform: scale(1.02);
     cursor: pointer;
 }
+.mobile_ui {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    top: 0px;
+}
+.zindex {z-index: 2;}
+.mobile_titulo {
+    z-index: 99;
+    width: 100%;
+}
+.mobile_start-bt {
+    background-image: url('../design/pg_inicial/btn_hover_scale.png');
+    width: 181px;
+    height: 181px;
+    position: absolute;
+    z-index: 15;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 9%;
+    display: block;
+    cursor: pointer;
+}
+.mobile_goleiro {
+    max-width: 100%;
+}
+.mobile_ui {
+    display: none;
+}
 @media (max-width: 1000px) {
+    #wrapper, .profile-card {display: none;}
+    body{
+        z-index: 0;
+    }
     .modal-intro {
         padding-top: 180px;
     }
@@ -141,8 +177,24 @@
         top: 75%;
         right: 40%;
     }
+    .botao-video {display: none;}
 }
 @media (max-width:500px) {
+    .mobile_goleiro {
+        margin-top: 200px;
+    }
+    .mobile_start-bt {
+        bottom: 2%;
+    }
+    body {
+        background-image: url('../design/pg_inicial/mob_bg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .botao-video {
+        display: none;
+    }
+    body::after {display: none;}
     .modal-intro {
         width: 100%;
         padding: 15px;
