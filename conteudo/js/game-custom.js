@@ -7,9 +7,10 @@ var containers = [
   document.querySelector("#cardPile"),
 
   // Containers que irão receber os cards
-  document.querySelector("#slot-1"),
-  document.querySelector('#slot-2'), 
-  document.querySelector('#slot-3')
+  document.querySelector(".slot-1"),
+  document.querySelectorAll('.slot-2')[0], 
+  document.querySelectorAll('.slot-2')[1], 
+  document.querySelectorAll('.slot-2')[2] 
 ];
 var audio = new Audio();
 var erro = 0;
@@ -33,7 +34,8 @@ dragula({
   revertOnSpill: true,
   direction: 'vertical',
   accepts: function (el, target, source, sibling) {
-      return el.dataset.target == target.id; 
+    console.log(target.className + ' e era pra ser ' + el.dataset.target)
+      return target.className.includes(el.dataset.target); 
   }
 }).on('drag', function(el, source) {
   // On mobile this prevents the default page scrolling while dragging an item.
