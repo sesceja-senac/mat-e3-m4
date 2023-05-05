@@ -216,9 +216,10 @@
     }
     .botao-video {
         top: 15%;
-        right: 45%;
+        left: 0;
+        right: unset;
         bottom: unset;
-        transform: scale(0.8) translateX(50%) !important;
+        transform: scale(0.8) !important;
         width: 250px;
     }
     body::after {display: none;}
