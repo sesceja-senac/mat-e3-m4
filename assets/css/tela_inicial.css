@@ -88,7 +88,7 @@
     height: 231px;
     position: absolute;
     z-index: 15;
-    right: 5%;
+    right: 10%;
     bottom: 0%;
     display: block;
     background-color: transparent;
@@ -164,6 +164,17 @@
 .mobile_ui {
     display: none;
 }
+.logo {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    z-index: 1;
+}
+@media (max-width: 1440px){
+    header img {
+        max-width: 800px;
+    }
+}
 @media (max-width: 1000px) {
     #wrapper, .profile-card {display: none;}
     body{
@@ -179,7 +190,13 @@
         top: 75%;
         right: 40%;
     }
-    .botao-video {display: none;}
+    .botao-video {
+        bottom: 7%;
+        top: unset;
+        right: unset;
+        left: 15px;
+        width: 250px;
+    }
     .mobile_ui {display: unset;}
 }
 @media (max-width:500px) {
@@ -198,7 +215,11 @@
         background-repeat: no-repeat;
     }
     .botao-video {
-        display: none;
+        top: 14%;
+        right: 45%;
+        bottom: unset;
+        transform: scale(0.9) translateX(50%) !important;
+        width: 250px;
     }
     body::after {display: none;}
     .modal-intro {
@@ -217,6 +238,6 @@
         max-width: 100%;
     }
     .start-bt {
-        right: 22%;
+        right: 30%;
     }
 }
