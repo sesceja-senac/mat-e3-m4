@@ -647,7 +647,11 @@
                                         <div class="row">
                                             <div class="col-12 col-sm-6">
                                                 <div class="game-titulo">
-                                                    <p><strong>Evento 1</strong> <br>
+                                                    <p class="only-print">
+                                                        <b>Evento 1</b> <br>
+                                                        Que opção corresponde ao evento A, em que podemos determinar a ocorrência de três filhos do sexo masculino? 
+                                                    </p>
+                                                    <p class="no-print"><strong>Evento 1</strong> <br>
 
                                                         Arraste a opção que corresponde ao evento A, em que podemos
                                                         determinar a ocorrência de três filhos do sexo masculino. </p>
@@ -657,10 +661,53 @@
                                                     <div class="slot slot-1">
                                                     </div>
                                                 </div>
+                                                <div class="only-print game-itens-container">
+                                                    <div id="card-1" class="card" data-target="slot-1">
+                                                        <img src="../assets/design/pg2/assets/ativ1_1.png" alt="">
+                                                    </div>
+            
+                                                    <div id="card-3" class="card" data-target="slot-3">
+                                                        <img src="../assets/design/pg2/assets/ativ1_2.png" alt="">
+                                                    </div>
+            
+                                                    <div id="card-5" class="card" data-target="slot-3">
+                                                        <img src="../assets/design/pg2/assets/ativ1_3.png" alt="">
+                                                    </div>
+            
+                                                    <div id="card-8" class="card" data-target="slot-2">
+                                                        <img src="../assets/design/pg2/assets/ativ1_4.png" alt="">
+                                                    </div>
+                                                    <div id="card-10" class="card" data-target="slot-3">
+                                                        <img src="../assets/design/pg2/assets/ativ1_5.png" alt="">
+                                                    </div>
+                                                    <div id="card-11" class="card" data-target="slot-2">
+                                                        <img src="../assets/design/pg2/assets/ativ1_6.png" alt="">
+                                                    </div>
+                                                    <div id="card-2" class="card" data-target="slot-2">
+                                                        <img src="../assets/design/pg2/assets/ativ1_7.png" alt="">
+                                                    </div>
+                                                    <div id="card-4" class="card" data-target="slot-3">
+                                                        <img src="../assets/design/pg2/assets/ativ1_8.png" alt="">
+                                                    </div>
+                                                    <!-- <div id="card-6" class="card" data-target="slot-2">
+                                                        <img src="../assets/design/pg2/assets/ativ1_9.png" alt="">
+                                                    </div>
+                                                    <div id="card-7" class="card" data-target="slot-2">
+                                                        <img src="../assets/design/pg2/assets/ativ1_1.png" alt="">
+                                                    </div>
+                                                    <div id="card-9" class="card" data-target="slot-3">
+                                                        <img src="../assets/design/pg2/assets/ativ1_1.png" alt="">
+                                                    </div> -->
+            
+                                                </div>
                                             </div>
                                             <div class="col-12 col-sm-6">
                                                 <div class="game-titulo">
-                                                    <p><strong> Evento 2</strong> <br>
+                                                    <p class="only-print">
+                                                        <b>Evento 2</b> <br>
+                                                        Que opções correspondem ao evento B, em que podemos determinar a ocorrência de dois filhos do sexo feminino e um do masculino? 
+                                                    </p>
+                                                    <p class="no-print"><strong> Evento 2</strong> <br>
 
                                                         Arraste as opções para o evento B, em que podemos determinar a
                                                         ocorrência de dois filhos do sexo feminino e um do masculino.
@@ -735,7 +782,8 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="only-print"><b>Gabarito</b>: (M, F, F), (F, M, F), (F, F, M) </p>
+                        <p class="only-print"><b>Gabarito Evento 1</b>: (M, M, M) </p>
+                        <p class="only-print"><b>Gabarito Evento 2</b>: (M, F, F), (F, M, F), (F, F, M) </p>
                         <div class="modal fade no-print" id="bgmodal-acerto" tabindex="-1"
                             aria-labelledby="bgmodal-passou" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered">
@@ -831,7 +879,7 @@
                             </div>
                         </div>
                         <p class="only-print"><b>Gabarito</b>: 1000 </p>
-                        <div class="esquemaDaBru customimg no-print">
+                        <div class="esquemaDaBru customimg">
                             <!-- <p class="enunciado" tabindex="0">3. As equipes do projeto Brilhando no Futebol foram convidadas para participar de um campeonato fora da cidade, porém não possuem verba suficiente para organizar a viagem para todos os jogadores. Os responsáveis tiveram a ideia de realizar a rifa de um computador. Assim, fizeram mil bilhetes, numerados de 1 a 1000, dos quais apenas um será premiado por sorteio. Lorenzo comprou os bilhetes de números 324, 325, 326, 327, 328, 329 e 330. Com base nessas informações, clique na opção correta. </p> -->
                             <p>Qual é o número de possibilidades do evento: Lorenzo ser premiado no sorteio? </p>
                             <button class="alt-e btn-sesc" title="alternativa: "><img
@@ -1079,7 +1127,7 @@
                             <button class="alt-e btn-sesc" title="alternativa: ">b) 2 maneiras </button><br class="only-print">
                             <button class="alt-c btn-sesc" title="alternativa: ">c) 4 maneiras </button><br class="only-print">
                             <button class="alt-e btn-sesc" title="alternativa: ">d) 3 maneiras </button>
-                            <p class="only-print"><b>Gabarito</b>: D</p>
+                            <p class="only-print"><b>Gabarito</b>: C</p>
                             <div class="feedbacks">
                                 <p class="f-negativo text-danger  mt-2 mb-2 animate__animated animate__shakeX"
                                     style="display: none;"><i class="fas fa-times"></i> Resposta incorreta! Para

@@ -864,3 +864,5 @@ iframe, iframe.youtube-pl{
   display: inline;
   margin-bottom: -3px;
 }
+span.only-print {display: inline !important;}
+.only-print.game-itens-container{display: flex !important; flex-wrap: wrap;}

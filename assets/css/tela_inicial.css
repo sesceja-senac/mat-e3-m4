@@ -83,14 +83,15 @@
     z-index: 15;
 }
 .start-bt {
-    background-image: url('../design/pg_inicial/btn_hover_scale.png');
+    background-image: url('../design/ajustes/bt_bola.png');
     width: 181px;
-    height: 181px;
+    height: 231px;
     position: absolute;
     z-index: 15;
-    right: 8%;
-    bottom: 5%;
+    right: 5%;
+    bottom: 0%;
     display: block;
+    background-color: transparent;
 }
 .start-bt:hover, .botao-video:hover {
     transform: scale(1.05) !important;
@@ -100,8 +101,8 @@
 }
 .botao-video {
     position: absolute;
-    bottom: 1%;
-    right: 22%;
+    bottom: 4%;
+    right: 26%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -145,9 +146,9 @@
     width: 100%;
 }
 .mobile_start-bt {
-    background-image: url('../design/pg_inicial/btn_hover_scale.png');
+    background-image: url('../design/ajustes/bt_bola.png');
     width: 181px;
-    height: 181px;
+    height: 231px;
     position: absolute;
     z-index: 15;
     right: 50%;
@@ -155,6 +156,7 @@
     bottom: 9%;
     display: block;
     cursor: pointer;
+    background-color: transparent;
 }
 .mobile_goleiro {
     max-width: 100%;
@@ -178,8 +180,12 @@
         right: 40%;
     }
     .botao-video {display: none;}
+    .mobile_ui {display: unset;}
 }
 @media (max-width:500px) {
+    .mobile_ui {
+        display: unset;
+    }
     .mobile_goleiro {
         margin-top: 200px;
     }
@@ -211,6 +217,6 @@
         max-width: 100%;
     }
     .start-bt {
-        right: 30%;
+        right: 22%;
     }
 }
