@@ -215,10 +215,10 @@
         background-repeat: no-repeat;
     }
     .botao-video {
-        top: 14%;
+        top: 15%;
         right: 45%;
         bottom: unset;
-        transform: scale(0.9) translateX(50%) !important;
+        transform: scale(0.8) translateX(50%) !important;
         width: 250px;
     }
     body::after {display: none;}
